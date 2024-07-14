@@ -1,2 +1,46 @@
 # JavaScript-Coursework
 This repository has course file for JavaScript programming.
+
+## Chapter 1: Variable data types
+
+colsole.log(”Hello World!”);  → For printing a message.
+
+; at the end of statements very similar to full stop in english language.
+
+We make use of html to connect our javascript code to browser. Boiler Plate code in html visual studio code → Shift + !
+
+The html files are directly connected to browser. We will write a html code to run the javascript code in the browser. 
+
+<script src=”filename.js> </script> → To access another file through html
+
+Variables → Containers for data. The variables can contain any data or no data. 
+
+Javascript is a dynamically typed language. What this means is that we can change the datatype of the variable stored inside the variable. 
+
+The = sign we call as assignment operator.
+
+Rules for naming a variable:
+• Variable names are case sensitive; "a" & "A" is different.
+• Only letters, digits, underscore(_ ) and $ is allowed. (not even space)
+• Only a letter, underscore(_) or $ should be 1st character.
+• Reserved words cannot be variable names.
+
+Declaration types for variables
+
+var: Variable can be re-declared & updated. A global scope variable.
+let : Variable cannot be re-declared but can be updated. A block scope variable.
+const: Variable cannot be re-declared or updated. A block scope variable.
+
+The block scope here defines that the code can be accessible inside the code block only. 
+
+In 2015 we got a new standard for javascript, after which we stopped using var to declare variables. 
+
+If we define a variable with let keyword, but not give any value inside it, then when we print its contents, we will get undefined. But the same will not work for const. const requires a value to be present inside the variable when declaration. 
+
+Data Types → Denotes the type of data that is stored inside a variable
+
+Primitive data types - The most basic ones [Number, String, Boolean, Undefined, Null, BigInt, Symbol]. We have 7 primitive types in java script.
+
+Non-Primitive date types - Complex data types, usually formed with primitive data types. Eg Arrays and functions. Mostly a collection of primitive data type. Generally objects are stored in key value pairs. We can declare objects with const keyword, but we an change the variables inside them because they are not const. 
+
+By default all the variables are undefined unless we declare a value inside them.

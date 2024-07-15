@@ -44,3 +44,83 @@ Primitive data types - The most basic ones [Number, String, Boolean, Undefined, 
 Non-Primitive date types - Complex data types, usually formed with primitive data types. Eg Arrays and functions. Mostly a collection of primitive data type. Generally objects are stored in key value pairs. We can declare objects with const keyword, but we an change the variables inside them because they are not const. 
 
 By default all the variables are undefined unless we declare a value inside them.
+
+## Chapter 2: **Operators and Conditional Statements**
+
+Comments in javascript:
+
+Single line comment- // body
+
+Multi line comment - /* body */
+
+# Operators
+
+Operators are used to perform operations. 
+
+**Arithmetic operators** help in performing arithmetic operations
+
+Basic - . +, -, *, /
+
+Special Binary operators - modulo[%, will return reminder], exponential[**]
+
+Special Unary operators -  increment[++], decrement[--]
+
+There are two ways that we can use operators -
+
+post increment / decrement → a++ / a -- [The value will change after operation is complete]
+
+pre increment / decrement → ++a / -- a [The value will change before the operation is complete]
+
+**Assignment Operators** helps in performing assignment operations
+
+= → will assign the LHS value to RHS
+
++= → means add the value of RHS with LHS. Eg. a += 1 means a = a + 1 . We can change the + with any available arithmetic operators. 
+
+**Comparison Operators** helps in comparing two values. Will return boolean according to the result. 
+
+== → equal to [will work if the values are from different data type]
+
+!= → Not equal to [will work if the values are from different data type]
+
+=== → Equal to and type [will not work if the values are from different data type]
+
+!== → Not equal to and type [will not work if the values are from different data type]
+
+> → Greater than
+
+>= → Greater than or equal to
+
+< → Less than
+
+<= → Less than or equal to
+
+**Logical operators** helps in evaluating multiple operations and will give a final answer. Will return boolean according to the result. 
+
+&& → Logical and
+
+|| → Logical or
+
+! → Logical not
+
+# Conditional Statements
+
+**if else**
+
+Will run piece of code only if certain conditions are met. Three variants [if, if else, if else if else]. We can check multiple statements and in multiple levels, and run code based on the conditions. 
+
+**Ternary Operators** takes three operands , another way to perform if else. preferred when simple action is to be performed. 
+
+syntax → condition ? operand 1 : operand 2. Here if the condition is true, then the operand 1 will execute. else operand 2 will execute. 
+
+MDN Docs - https://developer.mozilla.org/en-US/
+
+This website is used when we want to read the documentation for language. 
+
+**switch**
+
+Evaluates expression comparing its value with a series of switch cases. This is useful when we know exactly what is the subset of values inside the condition variable. In switch, if one case turns true, then it will execute all the code below it. Hence we specify break which will come out of all the loop.
+
+prompt(”some text”) → This code will take user input in form of pop up
+
+alert(”alert message”) → This code will display an alert in the webpage in form of one time pop up.

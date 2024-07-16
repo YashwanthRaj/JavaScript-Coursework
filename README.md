@@ -186,3 +186,33 @@ Built in functions to manipulate a strings.
 .charAt(idx) → 
 
 All these methods wont change the original string directly, just return a new value. We can rewrite the variable with new changes using this functions/methods.
+
+# Chapter 4 - Arrays
+
+Array is a linear collection of item. We generally prefer adding same data type elements in an array, although we can add data with multiple types. These are a sub type/variants of objects. Their keys are the position of the elements in the array. We can change the values of arrays. 
+
+Unlike strings that we cannot change directly, we can change the value of arrays. 
+
+[String → immutable, Arrays → Mutable]
+
+* All the method names start with lowercase
+
+### Array Methods
+
+SOME of these methods will not change the original array, but will return a changed array. 
+
+Push()  → Add an item in the array to the end of the array
+
+Pop() → Delete an item from the end position
+
+toString() → convert array to string
+
+concat() → Joins multiple arrays and returns result
+
+unshift() → add to start. Similar to push but will add in position 1
+
+shift() → Delete from start and return. Similar to pop, but will remove from position 1
+
+slice(strIndex, stopIndex) → returns a piece of array. The ending index is non inclusive
+
+splice(strIndex, delCount, newEl1…) → change original array (add, remove, replace)

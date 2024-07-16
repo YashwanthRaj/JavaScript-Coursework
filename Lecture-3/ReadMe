@@ -1,0 +1,61 @@
+# Chapter 3: Loops and Strings
+
+## Loops
+
+They run a piece of code again and again until the condition is met. 
+
+### For Loops
+
+These loop will have a variable, on which we will perform increment/decrement operation with specified step size. Until the condition is false, the loop will run. 
+
+Syntax - for (initialize variable; set stopping condition; updation/step size) { Body }
+
+Infinite loops are the ones that never ends. We should never do this in program. 
+
+### While loops
+
+Same as for loops, but here we initialize the variable before the loop and the updation condition occurs inside the loop. 
+
+### Do While
+
+Similar to while loops, only difference is that unlike in while loop where the condition is checked in start, here the condition is checked in end. This is why we have a guarantee that the do while loop will run at least once. 
+
+### For of loop
+
+Similar to for loops, but they help in iterating over strings and arrays. 
+
+### For in loop
+
+Similar to for loops, but they help in iterating over objects. Here the iterator will have the objects keys. 
+
+## Strings
+
+Sequence of characters used to represent text. They have some inbuilt properties and methods[function]. 
+
+**Template literals** are the strings created with `` instead of traditional "" . The advantage is we can add variables inside them using ${var_name}. This way in which we are adding place holders for variables inside template literals is called **string interpolation**. Here {} is a code block. 
+
+\n is an escape character which create a line break. 
+
+\t will give us tab space. 
+
+All these \n and \t, when counted under string length, these will not be counted as 2 characters, but as a single character. 
+
+### String Methods/Functions
+
+Built in functions to manipulate a strings. 
+
+.toUpperCase() → Change the string to upper case
+
+.toLowerCase() → Change the string to lower case
+
+.trim() → removes white spaces 
+
+.slice(start,end?) → returns parts of string. The end index is an optional value and is non inclusive
+
+.concat(str2) → joins str 2 with base string
+
+.replace(searchVal, newVal) → will replace the searchVal with newVal
+
+.charAt(idx) → 
+
+All these methods wont change the original string directly, just return a new value. We can rewrite the variable with new changes using this functions/methods.

@@ -216,3 +216,35 @@ shift() → Delete from start and return. Similar to pop, but will remove from p
 slice(strIndex, stopIndex) → returns a piece of array. The ending index is non inclusive
 
 splice(strIndex, delCount, newEl1…) → change original array (add, remove, replace)
+
+# Chapter 5: **Functions & Methods**
+
+## Functions
+
+Block of code that performs a specific task, can be invoked whenever needed. First we define functions and then we call it. We use functions to avoid redundancy in code. The code inside a function will run from top to bottom. 
+
+We can pass in parameters/arguments inside a function that we can use to process output. If we want to return the output from a function, then we use return keyword. There cant be any code written after return keyword. The parameters that we define in a function are local variables that will be active only between the function’s code block. 
+
+The arrow functions are compact way to represent smaller functions. 
+
+## Methods
+
+Similar to functions, but they will associated with objects [eg:  string**.toLowerCase()** → Here .toLowerCase() is a method] unlike a function that will return an output based on the input given. The functions when they associate themselves to an object, will become a method. 
+
+**forEach** is a type of loop that we use in array. 
+
+Eg: array.forEach( callBackFunction )           / / In javascript, parameters can be other functions. 
+
+Callback Function is a function that is passed as an argument to another function . This function helps to execute some code for each element in the array. 
+
+Inside foreach, we can use three parameters - val [value], idx [index], arr [the array itself]
+
+**map** method creates a new array with the results of some operation. The value its callback **returns are used to form new array**. 
+
+**filter** method created a new array of elements that five true for a condition/filter. Eg, all even elements of any given array. And even this method returns an array. 
+
+**reduce** method will perform operations on an array and will return a single value. Eg: returning sum / average of all elements. Here we pass in two values, the result that we are going to calculate, and then the current value. The result will be updated with every iteration, then once all the array elements are iterated over with, then return the result. 
+
+**What are higher order functions/methods ?**
+
+These are the functions that use other functions as parameters or returns a function as a parameter.

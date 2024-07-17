@@ -176,4 +176,4 @@ const productArray = outputArray.reduce((result,current) => {
     return result * current;
 })
 
-console.log("The sum of all the elements is: ", productArray);
+console.log("The product of all the elements is: ", productArray);

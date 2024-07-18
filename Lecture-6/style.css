@@ -1,0 +1,27 @@
+#heading {
+    color: blue;
+    background-color: yellow;
+}
+
+.mainSection   {
+    color: red;
+    background-color: ghostwhite;
+}
+
+body {
+    background-color: pink;
+}
+
+p {
+    color: aliceblue;
+    background-color: blueviolet;
+}
+
+.Box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+    background-color: aqua;
+}

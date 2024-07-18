@@ -248,3 +248,113 @@ Inside foreach, we can use three parameters - val [value], idx [index], arr [the
 **What are higher order functions/methods ?**
 
 These are the functions that use other functions as parameters or returns a function as a parameter.
+
+# Chapter 6: Document Object Model
+
+Three important concepts of web development :
+
+HTML [Structure] , CSS [Style] , JS [logic]
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/f0cbbd51-b278-480c-b5ae-a8ddedc59569/36ac1790-caab-4d62-94d4-b942a7ef728c/Untitled.png)
+
+### HTML Basics
+
+HTML contains the content of the webpage like the text, words, etc. Entire code is inside the html tags. All the opening and closing tags are  <…> a </…>. The tag represents what kind of content is inside them. We can provide IDs to all these tags OR elements so that it will be easier to access these elements. The IDs must be unique. 
+
+If there are group of elements that will follow/share same styling, then we can place them under same class. 
+
+Two main tags/parts inside a html is head and body. The head tag contains all the meta information. Like the framework information, name of website, the logo etc. All the contents of the website will be inside the body tag. 
+
+We use <script> </script> tag to add a javascript content to our HTML.
+
+We use <style> </style> tag to add a css content to HTLM.
+
+Both these tags inside the HTML file. But with these files, we can add the css or javascript code with the help of these tags. 
+
+Usually we prefer to add the script (javascript) file inside the body tag, just before the ending body tag. The reason is that HTML code runs from top to bottom. Once the entire HTML content is finished running. then it will create the object/document. And as the javascript uses this document, if we try to load javascript before the HTML, then the document is empty/null.
+
+### CSS Basics
+
+CSS helps in styling the contents of the webpage. We use CSS to style the HTML contents. We reference the tag and give it a style. then use the link with relation as stylesheet, then reference as the file name inside the HTML code to attach the css file. In this way we can style any element of the HTML.  
+
+In CSS, we can directly use the #{id name} to access and style the HTML element. And we can access the class by using .className. 
+
+Whenever we make use of the alert or prompt in javascript, the code execution will be paused temporarily. 
+
+When we open a webpage, when we inspect the page, the html code can be viewed inside the elements screen that we get once we click on inspect. And when we hover over the elements, those elements in the page will be highlighted as well. 
+
+We can access the css of the page that is present inside the same elements console but in the bottom section. 
+
+## Window Object
+
+The window object represents an open window in a browser. It is browser’s object(not javascript’s) & is automatically created by browser. It is a global object with lots of properties and methods. 
+
+Whenever we open a window in a browser, the browser will automatically create a window object. Many piece of like console.log(), alert, prompt … etc, all are methods of window object. Our code knows about the presence of window object, hence we do not need to specify window.{code}. The code will automatically take care of that. 
+
+### What is DOM?
+
+When a web page is loaded, the browser creates a DOM of the page. 
+
+![DOM . The tags inside the HTML, body, head … etc can be visualized as child nodes of the above tag.  ](https://prod-files-secure.s3.us-west-2.amazonaws.com/f0cbbd51-b278-480c-b5ae-a8ddedc59569/bd15ca1f-46fa-4d96-be33-5211c9463491/Untitled.png)
+
+DOM . The tags inside the HTML, body, head … etc can be visualized as child nodes of the above tag.  
+
+The contents of a html files are accessible inside javascript file. This is achieved because the elements of html, will be created as an object inside the javascript that we can access. This object is called document. This document is available under the window object. When we press window.document, it will print the HTML contents. 
+
+In basic terms, a document is a HTML that is converted into javascript object that we can access and preform operations. 
+
+console.log() → Used to print on the console.
+
+console.dir() → Helps us to print the properties and methods of special objects, like document. 
+
+We can use **document.[subnode].[subnode] = {change/new value};** to access the html element and make dynamic changes/manipulation to the content. 
+
+It is to make these dynamic changes is that we use DOM. 
+
+## DOM manipulation
+
+**Selecting with id:**
+
+document.getElementById(”myId”)
+
+Inside the code, generally all the ids are represented as #{id} 
+
+**Selecting with class name:**
+
+document.getElementByClassName(”myClassName”)
+
+This will return an HTML collection of all the sub nodes/ tags/ elements that fall under the same class. 
+
+**Selecting with tag:**
+
+document.getElementByTagName(”p/h.. etc”)
+
+This will also return a HTML collection. 
+
+**Query Selector**
+
+document.querySelector("myID / myClass / tag");   
+
+Through this, we can access element/elements using any of the above. This will return first element. 
+
+let allElements = document.querySelectorAll("myID / myClass / tag");
+
+Similar to above, but will return all the elements. Returns node list. 
+
+### Properties
+
+tagName : returns the tagName of the element
+
+innerText: returns the text content of the element in the element and all its children
+
+innerHTML: returns the plain text or HTML contents in the element
+
+textContent: returns textual content even for hidden elements
+
+In a DOM tree, there is concept of first and last child. The first child is the one that is declared first in the code. Similarly the last child is the one that is declared last in a code.  
+
+There are three types of nodes that are created, 
+
+text nodes, comment nodes, element nodes
+
+in DOM manipulation, we are concerned with only the element nodes that we can style and manipulate. So we include only element nodes in the DOM tree.

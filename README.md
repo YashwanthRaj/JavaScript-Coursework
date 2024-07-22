@@ -358,3 +358,35 @@ There are three types of nodes that are created,
 text nodes, comment nodes, element nodes
 
 in DOM manipulation, we are concerned with only the element nodes that we can style and manipulate. So we include only element nodes in the DOM tree.
+
+# Chapter 7 - DOM Part 2
+
+## DOM Manipulation
+
+Attributes - All the additional information that we give inside a HTML element. Eg - id, class, etc. 
+
+.getAttribute(attr) → to get the attribute value
+
+.setAttribute(attr) → to set the attribute value
+
+There is another special attribute called style. With this we can access the css or styling of the element. All the property that we use inside the css, in javascript that will be the same but in camel case. 
+
+We can create and add element in the document. 
+
+let elementVariable = document.createElement(”div”)
+
+Once we create an element, the changes wont be visible in the browser. We need to add the element inside the document. First we will select the node with respect to which we will add the new element. 
+
+**Insert Elements**
+
+node.append(el) → adds at the end of node(inside)
+
+node.prepend(el) → adds at the start of node (inside)
+
+node.before(el) → adds before the node (outside)
+
+node.after(el) → adds after the node (outside)
+
+Delete Element
+
+node.remove() → removes the node

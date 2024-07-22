@@ -1,0 +1,14 @@
+.box {
+    height: 300px;
+    width: 200px;
+    background-color: aquamarine;
+    color: white;
+}
+
+.sampleParagraph1 {
+    color: blueviolet;
+}
+
+.newClassForParagraph {
+    background-color: gainsboro;
+}

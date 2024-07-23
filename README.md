@@ -390,3 +390,45 @@ node.after(el) → adds after the node (outside)
 Delete Element
 
 node.remove() → removes the node
+
+# Chapter 8 - Events
+
+Events are the changes in the state if an object. Events are fired to notify code of changes that may affect code execution. 
+
+Examples of an event :- 
+
+Mouse events (click, double click etc)
+
+keyboard events ( keypress, keyup, keydown)
+
+Form events (submit etc)
+
+Print event 
+
+The way we make use of events and make them work according to our needs is called event handling. This event handling is concerned with what to do when we need once an event occurs. 
+
+### **Event handling in JS**
+
+We access and handle events with the node. 
+
+node.event = () ⇒ {
+
+// handle events here
+
+}
+
+The () ⇒ { } part is used when we want to create a function but not separately declare it. 
+
+If we handle events using inline method (JS code straight inside HTML) and inside JS, the JS will be given priority. And inside the JS, the code[Handler] that is present at last will run, overwriting all the previous ones. The drawback here is we can create only one event handling method for one event.
+
+**Event object -** Special object that stores information that has details about the event. All event handlers have access to the event objects properties and methods. 
+
+### Event Listeners
+
+node.addEventListener(event, callback)
+
+node.removeEventListener(event, callback) 
+
+For a node, whenever an event occurs, it triggers the callback function. Callback is a function that is passed as an argument inside another function. Callback is the event handler in our case. 
+
+The advantage of event listeners over regular event handlers is that we can add multiple event handlers to same event.

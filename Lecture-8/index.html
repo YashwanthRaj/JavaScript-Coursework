@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Inline event handling examples-->
+    <h1>Inline Event Handling</h1>
+    <button onclick="console.log('The bottom was pressed!!');"> Click Me!! </button>  <!--onclick here is an event-->
+    <button ondblclick="alert('Hello');"> Click Me 2 Times </button>  <!--Here Event triggered when the button is clicked 2 times-->
+    <div onmouseover="console.log('Mouse inside div');">This is a box</div>
+
+    <!-- Handling the events using JS-->
+    <h1>Event Handling using javascript</h1>
+    <div id="sampleBox1">This is again a sample box</div>
+
+    <button id="eventObject">Event Object Details</button>
+
+    <button id="eventlistners">Event Listeners</button>
+
+    <h1>Dark Mode Button</h1>
+    <button id="modeToggle"> Change Appearence</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

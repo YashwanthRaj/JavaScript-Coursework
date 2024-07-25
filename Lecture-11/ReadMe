@@ -1,0 +1,33 @@
+# Chapter 9 - Classes and Objects
+
+A javascript Object is an entity having state and behavior (properties and method). The have a special property called prototype. We can set prototype using _ _**proto_ _**
+
+Direct way of creating an object is similar to normal variable. But here we use { }
+
+## Prototyping
+
+In prototyping, one object can use the properties and methods of another object. 
+
+All the objects will inherit some general properties and methods from prototype. We can create our own prototype [Create an object and using _ _**proto_ _** inherit the methods and properties of that object]. If a methods name is same in prototype and object, then the one in the method will be considered. 
+
+## Classes
+
+Class is a sub program template for creating objects. Those objects will have some state (variables) and some behavior (functions) inside it.
+
+## Constructor
+
+Constructors is a special  method that is used to automatically invoke by **new** [when we create an new object with the new keyword (let object = new className();)] to initialize an object during an object creation. Whenever an object is created with a class, the constructor is the first thing that will run. 
+
+Its main job is to initialize new objects, but can also be used when we want something to run first whenever an object is created. 
+
+## Inheritance
+
+Inheritance is passing down properties and methods from parent class to child class. When child and parent have same method, then the method of child class will be considered. This is called method overriding. 
+
+## Super Keyword
+
+Super keyword is used to call the constructor of its parent class to access the parent’s properties and methods. Whenever we are using a constructor inside a derived class, then we must declare/initialize or call the parent class constructor using the keyword parent() inside the constructor. 
+
+## Error Handling [Try Catch blocks]
+
+We use try catch to handle error. Inside the try block goes the regular code. If there is no error inside the try block, then the code will run without touching the catch block. If any error persist, then it will go to catch block. Inside the argument for catch will be the object that represents the error.

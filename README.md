@@ -466,3 +466,57 @@ Super keyword is used to call the constructor of its parent class to access the 
 ## Error Handling [Try Catch blocks]
 
 We use try catch to handle error. Inside the try block goes the regular code. If there is no error inside the try block, then the code will run without touching the catch block. If any error persist, then it will go to catch block. Inside the argument for catch will be the object that represents the error.
+
+# Chapter 10 -  **Callbacks, Promises & Async Await**
+
+## Sync - Synchronous/Asynchronous
+
+**Synchronous** means the code runs in a particular sequence of instructions given in the program. Each instruction waits for the previous instruction to complete its execution. 
+
+In **Asynchronous** Programming, sometimes imp instructions get blocked due to some previous instructions, which causes a delay in the UI. Asynchronous code execution allows to execute next instructions immediately and block the flow.
+
+Javascript is a asynchronous programming language
+
+## Callback
+
+A callback is a function that is passed as an argument to another function. Whenever a function is represented with () attached to it, it means that we are executing that function. So in cases where we pass it as an argument, we must not put (). 
+
+## Callback Hell
+
+Nested callbacks stacked below one another forming a pyramid structure. (Pyramid of doom). This style of program becomes difficult to understand and manage. 
+
+**All the below concepts deal with the code running where a the other code should run only after the execution of a piece of code. Because normally, the code will make async functions parallel rather than one after another.** 
+
+## Promises
+
+Promises are used to solve the problem of callback hell. These are eventful completion of task. It is an object in jS. It can resolve and reject callbacks. 
+
+**In Built Functions of an promise** 
+
+Resolve - The task completed successfully. 
+
+Reject - Task is not completed or giving an error. 
+
+**Three states of a javascript promise object**
+
+resolve - task completed
+
+rejected - task not completed
+
+pending - processing, result is undefined
+
+**Once promise is made, then to manage them**
+
+promise.then() - This will run only when promise is fulfilled
+
+promise.catch() - This will run when promise is rejected
+
+## Async Await
+
+The promise chaining is better than callback hell, but still little bit difficult to understand. Hence we use async await. 
+
+An async function always returns a promise, we dont need to mention promise keyword. Await pauses the execution of its surrounding async function until the promise is settled. 
+
+## IIFE [Immediately Invoked Function Expression]
+
+A javascript function that runs as soon as it is defined.

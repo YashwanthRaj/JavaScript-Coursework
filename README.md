@@ -520,3 +520,25 @@ An async function always returns a promise, we dont need to mention promise keyw
 ## IIFE [Immediately Invoked Function Expression]
 
 A javascript function that runs as soon as it is defined.
+
+# Chapter 11 - Application Programming Interface
+
+## Fetch API
+
+This API provides an interface for fetching (sending/receiving) resources. It uses Request and Response Objects. The fetch() method is used to fetch a resource.  
+
+AJAX -  asynchronous JS and XML
+
+JSON - javaScript Object Notation
+
+json() method: returns a second promise that resolves with the result of parsing the response body text as JSON.(Input is JSON, output is JS Object)
+
+**Request/Response**
+
+HTTP verbs - the GET, PUT, POST etc
+
+Response Status Codes - this will denote what is the status/response of our request. Eg: 200 means everything was all right. 
+
+The headers contain details about the response such as content type, HTTP status code etc. 
+
+Under the form HTML tag, if we include a button, then once clicked, it will defaultly behave as a refresh button.
